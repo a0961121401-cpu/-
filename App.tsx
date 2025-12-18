@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Cog, Calculator as CalcIcon, MessageSquare } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Calculator from './components/Calculator';
 import AiAdvisor from './components/AiAdvisor';
 import ResultsChart from './components/ResultsChart'; // Formula Reference
@@ -10,6 +11,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-100 text-slate-900 font-sans selection:bg-blue-100">
+      <SpeedInsights />
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
